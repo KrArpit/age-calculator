@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- complete body of age calculator -->
+  <div class="ageCalculatorBody">
+    <div class="insertDate">
+    <!-- Day section -->
+    <div class="day">
+      <label for="dayValue" class="label">DAY</label><br>
+      <input type="number" name="day" id="dayValue" placeholder="DD" required>
+      <div id="dayError"></div>
+    </div>
+    <!-- Month Section -->
+    <div class="month">
+      <label for="monthValue" class="label">MONTH</label><br>
+      <input type="number" name="month" id="monthValue" placeholder="MM" required>
+      <div id="monthError"></div>
+    </div>
+    <!-- Year Section -->
+    <div class="year">
+      <label for="yearValue" class="label">YEAR</label><br>
+      <input type="number" name="year" id="yearValue" placeholder="YYYY" required>
+      <div id="yearError"></div>
+    </div>
+    </div>
+
+    <!-- Button Section -->
+    <div class="line">
+      <div class="horizontalLine">
+      <button id="btn"><img src="./assets/images/icon-arrow.svg" alt="button"></button>
+    </div>
+    </div>
+
+    <!-- Calculated Date -->
+    <div class="calculatedDate">
+      <div><span id="yearResult">&dash;&dash; </span>years</div>
+      <div><span id="monthResult">&dash;&dash; </span>months</div>
+      <div><span id="dayResult">&dash;&dash; </span>days</div>
+    </div>
+  </div>
+ <script src="./script.js"></script> 
+</body>
+</html>
